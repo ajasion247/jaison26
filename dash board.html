@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <script>
+        if(localStorage.getItem("loggedIn") !== "true"){
+            alert("Please Login First");
+            window.location.href = "user-login.html";
+        }
+    </script>
+
+</head>
+<body>
+
+<h1>Pharmacy Dashboard</h1>
+
+<a href="#" onclick="logout()">Logout</a>
+
+<script>
+function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "user-login.html";
+}
+</script>
+
+</body>
+</html>

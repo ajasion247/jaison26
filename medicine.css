@@ -1,0 +1,121 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body{
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Form Container */
+form{
+    background: #ffffff;
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Main Heading */
+h2{
+    position: absolute;
+    top: 30px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* Section Headings */
+h3{
+    color: #0d6efd;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 5px;
+}
+
+/* Labels */
+label{
+    font-size: 16px;
+    color: #333;
+    margin-left: 8px;
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"]{
+    transform: scale(1.2);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Medicine List */
+input[type="checkbox"]:hover + label,
+input[type="radio"]:hover + label{
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"]{
+    width: 48%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Submit Button */
+input[type="submit"]{
+    background-color: #28a745;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: #218838;
+}
+
+/* Reset Button */
+input[type="reset"]{
+    background-color: #dc3545;
+    color: white;
+    float: right;
+}
+
+input[type="reset"]:hover{
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px){
+    form{
+        width: 95%;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    input[type="submit"],
+    input[type="reset"]{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    input[type="reset"]{
+        float: none;
+    }
+}

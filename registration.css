@@ -1,0 +1,129 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body{
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:20px;
+}
+
+/* Heading */
+h2{
+    color:white;
+    font-size:36px;
+    margin-bottom:20px;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Form */
+form{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    width:500px;
+}
+
+/* Table */
+table{
+    width:100%;
+}
+
+/* Labels */
+label{
+    font-weight:600;
+    color:#333;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea{
+    width:100%;
+    padding:10px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+    margin:5px 0;
+    transition:0.3s;
+}
+
+/* Focus Effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+textarea:focus{
+    border-color:#0d6efd;
+    outline:none;
+    box-shadow:0 0 8px rgba(13,110,253,0.3);
+}
+
+/* Textarea */
+textarea{
+    resize:vertical;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"]{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+    margin:10px 5px;
+}
+
+/* Register Button */
+input[type="submit"]{
+    background:#28a745;
+    color:white;
+}
+
+input[type="submit"]:hover{
+    background:#218838;
+}
+
+/* Clear Button */
+input[type="reset"]{
+    background:#dc3545;
+    color:white;
+}
+
+input[type="reset"]:hover{
+    background:#c82333;
+}
+
+/* Responsive */
+@media(max-width:600px){
+
+    form{
+        width:95%;
+        padding:20px;
+    }
+
+    h2{
+        font-size:28px;
+        text-align:center;
+    }
+
+    input[type="submit"],
+    input[type="reset"]{
+        width:100%;
+        margin-top:10px;
+    }
+}

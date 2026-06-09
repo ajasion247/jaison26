@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Availability Module</title>
+        <link rel="stylesheet" href="C:\Users\user\Desktop\PHARMACY PROJECT\css\doctor.css">
+    </head>
+<body>
+
+    <h1>Doctor Availability System</h1>
+
+    <!-- Doctor Selection Dropdown -->
+    <form>
+
+        <label><b>Doctor Selection:</b></label><br>
+        <select>
+            <option>Dr. John Smith - General Physician</option>
+            <option>Dr. Priya Sharma - Cardiologist</option>
+            <option>Dr. Arun Kumar - Dermatologist</option>
+            <option>Dr. Kavya Devi - Pediatrician</option>
+            <option>Dr. Rahul Verma - Orthopedic</option>
+        </select>
+        <div style="text-align:center;color:white;margin-bottom:25px;">
+    <h3>Book Appointments with Experienced Doctors</h3>
+    <p>Select your doctor, choose a time slot, and confirm availability instantly.</p>
+</div>
+
+        <br><br>
+
+        <!-- Appointment Date Picker -->
+        <label><b>Appointment Date:</b></label><br>
+        <input type="date">
+
+        <br><br>
+
+        <!-- Time Slot Selection -->
+        <label><b>Time Slot Selection:</b></label><br>
+
+        <input type="radio" name="time"> 09:00 AM - 10:00 AM<br>
+        <input type="radio" name="time"> 10:00 AM - 11:00 AM<br>
+        <input type="radio" name="time"> 11:00 AM - 12:00 PM<br>
+        <input type="radio" name="time"> 02:00 PM - 03:00 PM<br>
+        <input type="radio" name="time"> 03:00 PM - 04:00 PM<br>
+
+        <br>
+
+        <!-- Extra Options -->
+        <label><b>Appointment Type:</b></label><br>
+
+        <input type="checkbox"> Online Consultation<br>
+        <input type="checkbox"> Follow-up Visit<br>
+        <input type="checkbox"> Emergency Appointment<br>
+
+        <br>
+
+        <!-- Doctor Status Display -->
+        <label><b>Doctor Status:</b></label><br>
+        <select>
+            <option>Available</option>
+            <option>Not Available</option>
+            <option>On Leave</option>
+        </select>
+
+        <br><br>
+
+        <!-- Buttons -->
+        <input type="button"
+               value="Check Availability"
+               onclick="alert('Doctor is available for selected slot!')">
+
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <hr>
+
+    <!-- Doctor Schedule Table -->
+    <h2>Doctor Schedule Table</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Doctor Name</th>
+            <th>Specialization</th>
+            <th>Available Days</th>
+            <th>Timing</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>Dr. John Smith</td>
+            <td>General Physician</td>
+            <td>Mon - Fri</td>
+            <td>09:00 AM - 01:00 PM</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>Dr. Priya Sharma</td>
+            <td>Cardiologist</td>
+            <td>Mon, Wed, Fri</td>
+            <td>02:00 PM - 06:00 PM</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>Dr. Arun Kumar</td>
+            <td>Dermatologist</td>
+            <td>Tue - Sat</td>
+            <td>10:00 AM - 03:00 PM</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>Dr. Kavya Devi</td>
+            <td>Pediatrician</td>
+            <td>Mon - Sat</td>
+            <td>09:00 AM - 12:00 PM</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>Dr. Rahul Verma</td>
+            <td>Orthopedic</td>
+            <td>Tue, Thu, Sat</td>
+            <td>01:00 PM - 05:00 PM</td>
+            <td>Available</td>
+        </tr>
+    </table>
+
+</body>
+</html>

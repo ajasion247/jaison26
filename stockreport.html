@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Report</title>
+     <link rel="stylesheet" href="C:\Users\user\Desktop\PHARMACY PROJECT\css\stock.css">
+</head>
+<body>
+
+    <h1>Pharmacy Stock Report</h1>
+
+    <form>
+
+        <label for="reportDate">Report Date:</label>
+        <input type="date" id="reportDate" name="reportDate">
+
+        <br><br>
+
+        <label>Stock Status:</label><br>
+
+        <input type="radio" name="stockStatus">
+        All Medicines
+
+        <input type="radio" name="stockStatus">
+        In Stock
+
+        <input type="radio" name="stockStatus">
+        Low Stock
+
+        <input type="radio" name="stockStatus">
+        Out of Stock
+
+        <br><br>
+
+        <input type="button"
+               value="Generate Stock Report"
+               onclick="alert('Stock Report Generated Successfully!')">
+
+    </form>
+
+    <hr>
+
+    <h2>Current Medicine Stock</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Medicine ID</th>
+            <th>Medicine Name</th>
+            <th>Category</th>
+            <th>Available Stock</th>
+            <th>Expiry Date</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>M001</td>
+            <td>Paracetamol</td>
+            <td>Tablet</td>
+            <td>500</td>
+            <td>15-12-2027</td>
+            <td>In Stock</td>
+        </tr>
+
+        <tr>
+            <td>M002</td>
+            <td>Dolo 650</td>
+            <td>Tablet</td>
+            <td>350</td>
+            <td>20-10-2027</td>
+            <td>In Stock</td>
+        </tr>
+
+        <tr>
+            <td>M003</td>
+            <td>Crocin</td>
+            <td>Tablet</td>
+            <td>120</td>
+            <td>12-08-2027</td>
+            <td>Low Stock</td>
+        </tr>
+
+        <tr>
+            <td>M004</td>
+            <td>Amoxicillin</td>
+            <td>Capsule</td>
+            <td>200</td>
+            <td>05-06-2027</td>
+            <td>In Stock</td>
+        </tr>
+
+        <tr>
+            <td>M005</td>
+            <td>Azithromycin</td>
+            <td>Tablet</td>
+            <td>75</td>
+            <td>15-03-2027</td>
+            <td>Low Stock</td>
+        </tr>
+
+        <tr>
+            <td>M006</td>
+            <td>Cetirizine</td>
+            <td>Tablet</td>
+            <td>300</td>
+            <td>25-11-2027</td>
+            <td>In Stock</td>
+        </tr>
+
+        <tr>
+            <td>M007</td>
+            <td>Metformin</td>
+            <td>Tablet</td>
+            <td>180</td>
+            <td>18-09-2027</td>
+            <td>In Stock</td>
+        </tr>
+
+        <tr>
+            <td>M008</td>
+            <td>Pantoprazole</td>
+            <td>Tablet</td>
+            <td>50</td>
+            <td>22-04-2027</td>
+            <td>Low Stock</td>
+        </tr>
+
+        <tr>
+            <td>M009</td>
+            <td>Vitamin C</td>
+            <td>Supplement</td>
+            <td>250</td>
+            <td>10-12-2027</td>
+            <td>In Stock</td>
+        </tr>
+
+        <tr>
+            <td>M010</td>
+            <td>Insulin</td>
+            <td>Injection</td>
+            <td>0</td>
+            <td>--</td>
+            <td>Out of Stock</td>
+        </tr>
+
+        <tr>
+            <th colspan="3">Total Medicines</th>
+            <th>2025 Units</th>
+            <th colspan="2">10 Medicines</th>
+        </tr>
+    </table>
+
+    <br>
+
+    <h2>Stock Alerts</h2>
+
+    <input type="checkbox"> Show Low Stock Medicines <br>
+    <input type="checkbox"> Show Expiring Medicines <br>
+    <input type="checkbox"> Show Out of Stock Medicines <br>
+    <input type="checkbox"> Show Supplier Information <br><br>
+
+    <h3>Low Stock Alert</h3>
+    <ul>
+        <li>Crocin - 120 Units Remaining</li>
+        <li>Azithromycin - 75 Units Remaining</li>
+        <li>Pantoprazole - 50 Units Remaining</li>
+        <li>Insulin - Out of Stock</li>
+    </ul>
+
+    <input type="button"
+           value="Download Stock Report"
+           onclick="alert('Stock Report Downloaded Successfully!')">
+
+</body>
+</html>

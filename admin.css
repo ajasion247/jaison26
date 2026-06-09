@@ -1,0 +1,117 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+body{
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading */
+h2{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Form Container */
+form{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 400px;
+}
+
+/* Table */
+table{
+    width: 100%;
+}
+
+/* Labels */
+label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Input Hover Effect */
+input[type="text"]:focus,
+input[type="password"]:focus{
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0 0 8px rgba(79,172,254,0.5);
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"]{
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Login Button */
+input[type="submit"]{
+    background: #28a745;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background: #218838;
+}
+
+/* Clear Button */
+input[type="reset"]{
+    background: #dc3545;
+    color: white;
+}
+
+input[type="reset"]:hover{
+    background: #c82333;
+}
+
+/* Footer Text */
+p{
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media(max-width: 500px){
+    form{
+        width: 90%;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+}

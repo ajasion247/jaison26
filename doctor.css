@@ -1,0 +1,164 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Body */
+body{
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Main Heading */
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 38px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+h2{
+    text-align: center;
+    color: white;
+    margin: 30px 0 20px;
+}
+
+/* Form Container */
+form{
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Labels */
+label{
+    font-size: 16px;
+    color: #333;
+}
+
+/* Input Fields */
+select,
+input[type="date"]{
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* Focus Effects */
+select:focus,
+input[type="date"]:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"]{
+    margin: 10px 8px 10px 0;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Buttons */
+input[type="button"],
+input[type="reset"]{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Check Availability Button */
+input[type="button"]{
+    background: #28a745;
+    color: white;
+    margin-right: 10px;
+}
+
+input[type="button"]:hover{
+    background: #218838;
+}
+
+/* Clear Button */
+input[type="reset"]{
+    background: #dc3545;
+    color: white;
+}
+
+input[type="reset"]:hover{
+    background: #c82333;
+}
+
+/* Divider */
+hr{
+    margin: 40px auto;
+    border: 1px solid rgba(255,255,255,0.3);
+    max-width: 1000px;
+}
+
+/* Table Styling */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th{
+    background: #007bff;
+    color: white;
+    padding: 12px;
+}
+
+table td{
+    padding: 12px;
+    text-align: center;
+}
+
+table tr:nth-child(even){
+    background: #f2f2f2;
+}
+
+table tr:hover{
+    background: #d6ecff;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    body{
+        padding: 15px;
+    }
+
+    form{
+        width: 100%;
+        padding: 20px;
+    }
+
+    table{
+        display: block;
+        overflow-x: auto;
+    }
+
+    input[type="button"],
+    input[type="reset"]{
+        width: 100%;
+        margin-top: 10px;
+    }
+}

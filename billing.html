@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Bill</title>
+        <link rel="stylesheet" href="C:\Users\user\Desktop\PHARMACY PROJECT\css\billing.css">
+</head>
+<body>
+
+    <h2>Generate Pharmacy Bill</h2>
+
+    <form>
+
+        <label>Bill Number:</label><br>
+        <input type="text" value="BILL001" readonly><br><br>
+
+        <label>Customer Name:</label><br>
+        <input type="text" required><br><br>
+
+        <label>Customer Mobile:</label><br>
+        <input type="tel" required><br><br>
+
+        <label>Select Medicines:</label><br>
+
+        <input type="checkbox"> Paracetamol - ₹20<br>
+        <input type="checkbox"> Dolo 650 - ₹30<br>
+        <input type="checkbox"> Crocin - ₹25<br>
+        <input type="checkbox"> Amoxicillin - ₹80<br>
+        <input type="checkbox"> Cetirizine - ₹15<br>
+        <input type="checkbox"> Pantoprazole - ₹60<br><br>
+
+        <label>Total Quantity:</label><br>
+        <input type="number" min="1" required><br><br>
+
+        <label>Payment Method:</label><br>
+
+        <input type="radio" name="payment"> Cash
+        <input type="radio" name="payment"> Card
+        <input type="radio" name="payment"> UPI
+        <br><br>
+
+        <label>Additional Services:</label><br>
+
+        <input type="checkbox"> Home Delivery<br>
+        <input type="checkbox"> Email Invoice<br>
+        <input type="checkbox"> SMS Notification<br><br>
+
+        <label>Discount:</label><br>
+        <select>
+            <option>No Discount</option>
+            <option>5% Discount</option>
+            <option>10% Discount</option>
+            <option>15% Discount</option>
+        </select>
+        <br><br>
+
+        <label>Bill Date:</label><br>
+        <input type="date"><br><br>
+
+        <input type="button"
+               value="Generate Bill"
+               onclick="alert('Bill Generated Successfully!')">
+
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <hr>
+
+    <h3>Bill Summary</h3>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Medicine</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>Paracetamol</td>
+            <td>2</td>
+            <td>₹40</td>
+        </tr>
+
+        <tr>
+            <td>Dolo 650</td>
+            <td>1</td>
+            <td>₹30</td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Total Amount</th>
+            <th>₹70</th>
+        </tr>
+    </table>
+
+</body>
+</html>

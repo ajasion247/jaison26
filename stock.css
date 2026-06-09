@@ -1,0 +1,165 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body{
+    background: linear-gradient(135deg,#11998e,#38ef7d);
+    padding:30px;
+    min-height:100vh;
+}
+
+/* Main Heading */
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:25px;
+    font-size:38px;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.3);
+}
+
+h2{
+    color:#0d6efd;
+    margin:25px 0 15px;
+}
+
+h3{
+    color:#dc3545;
+    margin-top:20px;
+}
+
+/* Form */
+form{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    max-width:900px;
+    margin:auto;
+}
+
+/* Labels */
+label{
+    font-weight:bold;
+    color:#333;
+}
+
+/* Date Input */
+input[type="date"]{
+    padding:10px;
+    border:2px solid #ddd;
+    border-radius:6px;
+    margin-left:10px;
+}
+
+/* Radio Buttons */
+input[type="radio"]{
+    margin:10px;
+    transform:scale(1.1);
+}
+
+/* Checkboxes */
+input[type="checkbox"]{
+    margin:8px;
+    transform:scale(1.1);
+}
+
+/* Buttons */
+input[type="button"]{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+}
+
+input[type="button"]:hover{
+    background:#218838;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    margin-top:20px;
+}
+
+table th{
+    background:#0d6efd;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:10px;
+    text-align:center;
+}
+
+table tr:nth-child(even){
+    background:#f8f9fa;
+}
+
+table tr:hover{
+    background:#dbeafe;
+}
+
+/* Horizontal Line */
+hr{
+    margin:30px 0;
+    border:1px solid #ddd;
+}
+
+/* Alert List */
+ul{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+ul li{
+    margin-bottom:10px;
+    color:#333;
+}
+
+/* Download Button */
+body > input[type="button"]{
+    display:block;
+    margin:20px auto;
+    background:#ff9800;
+}
+
+body > input[type="button"]:hover{
+    background:#e68900;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+
+    form{
+        width:100%;
+    }
+
+    input[type="button"]{
+        width:100%;
+        margin-top:10px;
+    }
+}
